@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-education
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: e-education
+  template:
+    metadata:
+      labels:
+        app: e-education
+    spec:
+      containers:
+      - name: e-education
+        image: sasipretham/e-education:1.0
+        ports:
+        - containerPort: 5173
