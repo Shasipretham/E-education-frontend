@@ -16,4 +16,4 @@ spec:
       - name: e-education
         image: sasipretham/e-education:1.0
         ports:
-        - containerPort: 5173
+        - containerPort: 80
